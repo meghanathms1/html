@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading</title>
+    <style>
+        body{
+            padding:0;
+            margin: 0;
+        }
+       .container{
+        width: 100%;
+        height: 100vh;
+        background: rgb(51, 51, 51);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+          }
+          .loading{
+            width: 400px;
+            height: 200px;
+            display:flex;
+            flex-direction: row;
+            align-items: end;
+            justify-content: center;
+          }
+          .belowBox{
+            background: rgb(255, 255, 255);
+            width: 400px;
+            height: 15px;
+            margin-bottom: 70px;
+          }
+          .yellowbox{
+            background: yellow;
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+            margin-bottom: 0;
+            border-radius: 50%;
+            animation: updown 1.5s infinite .1s ease-in-out ;
+            
+          }
+          .orangebox{
+            background: rgb(255, 98, 0);
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+            margin-bottom: 0;
+            border-radius: 50%;
+            animation: updown 1.5s infinite 1s ease-in-out ;
+          
+          }
+          .bluebox{
+            background: rgb(0, 132, 255);
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+            margin-bottom: 0;
+            border-radius: 50%;
+            animation: updown 1.5s infinite .1s ease-in-out ;
+            
+          
+          }
+          .greenbox{
+            background: rgb(70, 190, 0);
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+            margin-bottom: 0;
+            border-radius: 50%;
+            animation: updown 1.5s infinite 1s ease-in-out ;
+          }
+          
+          .pinkbox{
+            background: rgb(255, 0, 200);
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+            margin-bottom: 0;
+            border-radius: 50%;
+            animation: updown 1.5s infinite .1s ease-in-out;
+            
+          }
+          @keyframes updown{
+            0%{
+                transform: translate(0);
+            }
+            10%{
+                transform: translateY(-70px);
+            }
+            100%{
+                transform: translate(0);
+            }
+          }
+          
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="loading">
+            <div class="yellowbox"></div>
+            <div class="orangebox"></div>
+            <div class="bluebox"></div>
+            <div class="greenbox"></div>
+            <div class="pinkbox"></div>
+
+        </div>
+        <div class="belowBox"></div>
+    </div>
+</body>
+</html>

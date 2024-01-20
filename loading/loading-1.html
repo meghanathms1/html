@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+        }
+        .container{
+            width:100%;
+            height: 100vh;
+            background: rgb(0, 251, 255);
+            display: flex;
+            align-items:center;
+            justify-content: center;       
+         }
+        .loader-1 , .loader-2 , .loader-3 , .loader-4, .loader-5 , .loader-5 ,.loader-6{
+            width: 20px;
+            height: 20px;
+            background: white;
+            margin: 10px;
+            border-radius: 5%;
+            animation: load 1s ease-in-out .1s infinite;
+            transition: 5s;
+        }
+        .loader-2{
+            
+            animation: load 1s ease-in-out .2s infinite;
+        }
+        .loader-3{
+            animation: load 1s ease-in-out .3s infinite;
+        }
+        .loader-4{
+            animation: load 1s ease-in-out .4s infinite;
+        }
+        .loader-5{
+            animation: load 1s ease-in-out .5s infinite;
+        }
+        .loader-6{
+            animation: load 1s ease-in-out .6s infinite;
+        }
+
+        @keyframes load {
+            0%{
+                transform: translateY(0px);
+            }
+            
+            50%{
+                background:rgb(0, 38, 255) ;
+                height: 200px;
+                transform: translateY(-90px) translateY(90px);
+            }  
+            100%{
+                transform: translateY(0px);
+            }  
+         }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="loader-1"></div>
+        <div class="loader-2"></div>
+        <div class="loader-3"></div>
+        <div class="loader-4"></div>
+        <div class="loader-5"></div>
+        <div class="loader-6"></div>
+        <div class="loader-7"></div>
+        <div class="loader-8"></div>
+    </div>
+</body>
+</html>

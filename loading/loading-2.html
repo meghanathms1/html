@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .load-1,
+      .load-2,
+      .load-3,
+      .load-4 {
+        width: 30px;
+        height: 30px;
+        margin: 10px;
+        border-radius: 50px;
+        animation: loading 1s ease 0s infinite;
+      }
+      .load-1 {
+        background: blue;
+        animation-delay: 0.1;
+      }
+      .load-2 {
+        background: red;
+        animation-delay: 0.2s;
+      }
+      .load-3 {
+        background: orange;
+        animation-delay: 0.3s;
+      }
+      .load-4 {
+        background: green;
+        animation-delay: 0.4s;
+      }
+
+      @keyframes loading {
+        0% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-25px);
+        }
+        100% {
+          transform: translateY(0px);
+        }
+      }
+
+      @keyframes rot {
+        from {
+          transform: rotate(0deg);
+        }
+
+        to {
+          transform: rotate(1000000000deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="load-1"></div>
+      <div class="load-2"></div>
+      <div class="load-3"></div>
+      <div class="load-4"></div>
+    </div>
+  </body>
+</html>
