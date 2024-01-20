@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculater</title>
+    <link href="calculater.css" rel="stylesheet" type="text/css">
+    
+<body>  
+ 
+    <div class="main">
+        <div class="body">
+            <div class="textcasio">
+                <h4>CASIO</h4>
+            </div>
+            <div class="textfx82ms">
+                <h5>fx-82MS</h5>
+            </div>
+
+            <div class="screen">
+                <input  id="display" type="text">
+            </div>
+            <div class="row">
+                <button onclick="clr()" class="btn" type="text" >c</input>
+            </div>    
+            <div class="row">
+                <button  onclick="clk(7)"class="btn" type="text" >7</input>
+                <button  onclick="clk(8)"class="btn"type="text" >8</input>
+                <button  onclick="clk(9)"class="btn"type="text" >9</input>
+                <button  onclick="clk('/')"class="btn" type="text">/</input>
+            </div>               
+            <div class="row">
+                <button onclick="clk(4)" class="btn" type="text">4</input>
+                <button onclick="clk(5)" class="btn" type="text">5</input>
+                <button onclick="clk(6)" class="btn" type="text">6</input>
+                <button onclick="clk('*')" class="btn" type="text">x</input>
+            </div>
+            <div class="row">
+                <button onclick="clk(1)"class="btn" type="text" >1</input>
+                <button onclick="clk(2)"class="btn" type="text" >2</input>
+                <button onclick="clk(3)"class="btn" type="text" >3</input>
+                <button onclick="clk('+')"class="btn" type="text" >+</input>
+            </div>
+            <div class="row">
+                <button onclick="clk('.')"class="btn" type="text" >.</input>
+                <button onclick="clk(0)"class="btn" type="text" >0</input>
+                <button onclick="res('=')"class="btn" type="text" >=</input>
+                <button onclick="clk('-')"class="btn" type="text" >-</input>
+            </div>
+        </div>        
+    </div>
+  
+</body>
+<script src="calculater.js"></script>
+</html>
